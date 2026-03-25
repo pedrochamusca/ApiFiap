@@ -27,4 +27,10 @@ public class Categoria {
         this.descricao = dados.descricao();
         this.ativo = 1;
     }
+    public void atualizarCategoria(@Valid DadosAtualizarCategoria dados) {
+        if(dados.nome() != null)
+            this.nome = dados.nome();
+        if(dados.descricao() != null)
+            this.descricao = dados.descricao();
+    }
 }
