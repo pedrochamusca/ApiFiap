@@ -33,4 +33,7 @@ public class Categoria {
         if(dados.descricao() != null)
             this.descricao = dados.descricao();
     }
+    public void excluirCategoria() {
+        this.ativo = 0;
+    }
 }
